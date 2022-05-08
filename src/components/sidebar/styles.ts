@@ -8,6 +8,8 @@ export const Container = styled.aside`
   width: 16rem;
 
   box-shadow: ${(props) => props.theme.shadows.base};
+
+  background-color: ${(props) => props.theme.primary};
 `;
 
 export const Brand = styled.div`
