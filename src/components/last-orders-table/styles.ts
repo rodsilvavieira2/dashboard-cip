@@ -68,6 +68,11 @@ export const TableBody = styled.tbody`
 
     border-color: ${(props) => props.theme.neutralDivider};
   }
+  tr:nth-of-type(2n + 2) {
+    td {
+      background: ${(props) => props.theme.tableRowBg};
+    }
+  }
 `;
 
 export const ShowQuantityButton = styled.button`

@@ -35,11 +35,11 @@ export function LastOrdersTable({ data = [] }: LastOrdersTableProps) {
 
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalPages = Math.floor(data.length / 4);
+  const totalPages = Math.floor(data.length / 5);
 
   useEffect(() => {
-    const start = (currentPage - 1) * 4;
-    const end = currentPage * 4;
+    const start = (currentPage - 1) * 5;
+    const end = currentPage * 5;
 
     setItems(data.slice(start, end));
     setCurrentPage(currentPage);
